@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+	<title>jQuery Minesweeper Game</title>
+	<link rel="stylesheet" href="mine.css" type="text/css" />
+	<script type="text/javascript" src="jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="rr.js"></script>
+	<script type="text/javascript" src="rs.js"></script>
+	<script type="text/javascript" src="rf.js"></script>
+	<script type="text/javascript" src="n.js"></script>
+	<script type="text/javascript" src="ms.js"></script>
+	<script type="text/javascript">
+		jQuery(function ( $ ) {
+			var ms = new MineSweeper(
+				$("table.mine-sweeper"), 17, 12, "99%"
+			);
+		});
+	</script>
+</head>
+<body>
+<table cellspacing="2" class="mine-sweeper"></table>
+</body>
+</html>
